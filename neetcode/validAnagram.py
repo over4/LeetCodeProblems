@@ -11,7 +11,7 @@ from collections import defaultdict
 #therefore check to make sure they are the same length
 
 
-
+#-------------------------------------------------------------------------------------------------------------------
 #after making this I now know you need to have the same number of repeated characters and I think there are some 
 #edge cases where this wont work
 
@@ -56,7 +56,7 @@ def isAnagramWrong(word1,word2):
 
 
 
-
+#-------------------------------------------------------------------------------------------------------------------
 
 # more robust solution that works all the time using hashmaps
 
@@ -108,7 +108,7 @@ def isAnagramHashMaps(word1,word2):
 #print(isAnagramHashMaps(testword1,testword2))
 #print(isAnagramHashMaps(testword3,testword4))
 
-
+#-------------------------------------------------------------------------------------------------------------------
 
 
 #simple method to check is to sort both strings then check if the are equal
@@ -122,6 +122,6 @@ print(isAnagramSorted(testword3,testword4))
     
     
     
-    
+#-------------------------------------------------------------------------------------------------------------------
     
 

@@ -4,13 +4,6 @@
 
 // Notice that the solution set must not contain duplicate triplets.
 
-// compliment = 0 - nums[i] - nums[j]
-//             if(set.has(compliment) &&  i !== j){
-//                 //we have a match
-//                 result.add([nums[i],nums[j],compliment])
-//             }
-
-
 function threeSum(nums){
     nums.sort( (a, b) => a - b );
     let result = []

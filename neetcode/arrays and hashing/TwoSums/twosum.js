@@ -16,7 +16,7 @@ function fasttwosum(numbers,target){
     for(let i = 0; i<numbers.length;i++){
         let compliment =  target - numbers[i]
         if(hashMap.has(compliment)){
-            return ([numbers[i] , compliment])
+            return ([i , hashMap.get(compliment)])
         }
         hashMap.set(numbers[i],i)
         

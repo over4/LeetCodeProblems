@@ -12,16 +12,23 @@ function characterReplacement(s,k){
     for(let right=0;right<s.length;right++){
         //let current char
         let char = s[right]
+        
         //update the entry of this character and initialize if doesnt exist
+        //this will be used to check how many characters are not valid in a window
         charCount[char]= (charCount[char] || 0) + 1
-        //check if it is the new longest
+        
+        //check what characters we see is the most, use this to get the window size
+        //and what values do not match
         maxfrq = Math.max(maxfrq,charCount[char])
 
         //change the size of the window minus maxfrq is greater than k
+        //this means windowsize - highestcountofachar > number of replacements
         while((right-left + 1) - maxfrq > k){
-            //shrink the window
-            charCount[s[left]] -= 1;
+            //shift window to make valid
             left += 1;
+            //update the count
+            charCount[s[left]] -= 1;
+            
         }
         maxLength = Math.max(maxLength,right-left+1)
     }

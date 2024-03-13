@@ -18,7 +18,7 @@ function threeSum(nums){
         while(left<right){
             //check the sum of the current numbers
             const sum = nums[i] + nums[left] + nums[right];
-
+            
             if(sum === 0){
                 //we have a match so add to result
                 result.push([nums[i], nums[left], nums[right]]);

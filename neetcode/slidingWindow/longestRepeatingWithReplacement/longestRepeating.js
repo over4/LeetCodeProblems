@@ -23,11 +23,14 @@ function characterReplacement(s,k){
 
         //change the size of the window minus maxfrq is greater than k
         //this means windowsize - highestcountofachar > number of replacements
+        //basically we need to skrink the window until it is valid again
         while((right-left + 1) - maxfrq > k){
+            //remove the value we just shift away from
+            charCount[s[left]] -= 1;
+            
             //shift window to make valid
             left += 1;
-            //update the count
-            charCount[s[left]] -= 1;
+            
             
         }
         maxLength = Math.max(maxLength,right-left+1)

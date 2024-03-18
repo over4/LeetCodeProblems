@@ -1,6 +1,18 @@
 // Given the head of a singly linked list,
 // reverse the list, and return the reversed list.
 
+function printList(list){
+    let curr = list
+    let res = ""
+    while(curr){
+        if(curr.next)res = res + curr.val + "->"
+        else res = res + curr.val
+        curr = curr.next
+    }
+    console.log(res)
+}
+
+
 function ListNode(val, next) {
     this.val = val === undefined ? 0 : val;
     this.next = next === undefined ? null : next;
@@ -25,5 +37,16 @@ var reverseList = function (head) {
     return prev;
 };
 
-console.log(reverseList([1,2]));
-console.log(reverseList([1,2,3,4,5]));
+
+let list1 = new ListNode(1, new ListNode(2))
+let list2 = new ListNode(1, new ListNode(2, new ListNode(3,new ListNode(4, new ListNode(5)))))
+
+printList(list1)
+printList(reverseList(list1))
+
+
+printList(list2)
+printList(reverseList(list2))
+
+
+

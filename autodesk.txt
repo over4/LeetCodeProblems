@@ -1,0 +1,25 @@
+JavaScript
+    Promises, Closures
+    array vs list what is a hash, set, stack...
+    heap vs stack dynamic memory allocation for an array
+    What is lexical scoping in Javascript
+
+LeetCode
+    linked list
+    Reverse a string
+    binary search tree 
+    How to quickly find a name in billions of entries 
+    sorting algorithm
+    binary search
+    merge sort 
+    Calculate the height of a Binary Tree
+    Left View Of A Binary Tree
+    reverse a linked list
+    Count the number of islands
+
+DSA/OOP 
+    overloading and overriding, operators overloading + good code practice
+    differences between private/protected/public, interfaces
+    constructors, getters and setters, encapsulation, 
+        inheritance, overloading, overriding, and generics
+    

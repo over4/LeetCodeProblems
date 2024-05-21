@@ -70,11 +70,22 @@ var climbStairs = function(n) {
     for(let i = 0;i<n-1;i++){
         //pointer shifting
         //store one in a temp since we are modifiying it
-        temp = one
+        let temp = one
         //new first pointer is two + one
         one = one + two
         //reassign two to what 1 was before
         two = temp
     }
     return one
+};
+
+var climbStairs = function(n) {
+    let current = 1; // ways to reach the current step
+    let previous = 1; // ways to reach the previous step
+    for (let i = 0; i < n - 1; i++) {
+        let temp = current;
+        current = current + previous;
+        previous = temp;
+    }
+    return current;
 };

@@ -14,15 +14,10 @@
 
 
 
-
-
-
-
-
 //we can apply a similar approach to the min of a rotated array problem
 //we can apply the logic that if nums[half]>=nums[left] then we can understand
 //what values are on each side, we know that there will be larger numbers on the left
-//of half and smaller numbers on the left, so we can compare this to the targe to 
+//of half and smaller numbers on the left, so we can compare this to the target to 
 //adjust the pointers accordingly
 
 

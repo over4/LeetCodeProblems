@@ -49,7 +49,7 @@ LRUCache.prototype.put = function(key, value) {
     this.map.set(key,value)
     //check if the size is greater than capacty and reduce it if thats true
     if(this.map.size > this.capacity){
-        const lastUsed = this.map.keys().next.value
+        const lastUsed = this.map.keys().next().value
         this.map.delete(lastUsed)
     }
 };

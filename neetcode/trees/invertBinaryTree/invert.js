@@ -21,4 +21,6 @@ var invertTree = function (root) {
     let right = root.right;
     root.left = invertTree(right);
     root.right = invertTree(left);
+
+    return root
 };

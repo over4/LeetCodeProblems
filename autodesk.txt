@@ -5,10 +5,10 @@ JavaScript
     What is lexical scoping in Javascript
 
 LeetCode
-    linked list
-    Reverse a string
-    binary search tree 
-    How to quickly find a name in billions of entries 
+    linked list 1
+    Reverse a string 1
+    binary search tree 1
+    How to quickly find a name in billions of entries 1
     sorting algorithm
     binary search
     merge sort 

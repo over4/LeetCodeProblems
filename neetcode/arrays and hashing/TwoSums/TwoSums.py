@@ -18,6 +18,7 @@ def findIndicesInOn2(target, array):
                 return
 print("Indices using O n^2")                
 findIndicesInOn2(9,nums1)
+
 findIndicesInOn2(6,nums2)
 findIndicesInOn2(6,nums3)
                 
